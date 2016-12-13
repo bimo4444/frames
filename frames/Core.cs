@@ -31,7 +31,7 @@ namespace frames
             {
                 var files = Directory.GetFiles(file);
                 Transform(files, subfolder);
-            }
+            }   // todo: provide recursion
 
             if (CallBack != null)
                 CallBack(this, new MyEventArgs(file));
